@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 75px);
+  grid-template-rows: repeat(3, 75px);
+  background-color: black;
+  gap: 2px;
+}
+.board .cell {
+  display: flex;
+  flex-direction: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

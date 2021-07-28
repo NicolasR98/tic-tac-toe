@@ -1,0 +1,8 @@
+@use "../1_base/colors" as *;
+@use "../2_utils/mixins" as *;
+
+body {
+  @include flex(0, center, center);
+  min-width: 100%;
+  min-height: 100vh;
+}

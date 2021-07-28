@@ -1,0 +1,15 @@
+@use "../2_utils/mixins" as *;
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 75px);
+  grid-template-rows: repeat(3, 75px);
+  background-color: black;
+  gap: 2px;
+
+  .cell {
+    @include flex(0, center, center);
+    background-color: white;
+    text-align: center;
+  }
+}
