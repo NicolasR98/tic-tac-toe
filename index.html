@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./scripts/main.js" defer></script>
+    <script type="module" src="./scripts/main.js"></script>
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
     <main class="main">
+        <h1 class="rounds-display">Round: <span class="round-counter"></span></h1>
+        <h2 class="player-display">Player</h2>
+        <h2 class="player-display">Player</h2>
+        <h2 class="current-turn-display">Current turn: <span class="player-name"></span></h2>
+        <button class="btn-reset">Play again</button>
         <div class="board">
             <!-- 1st Row -->
             <div class="cell" data-cell="0"></div>

@@ -1,4 +1,13 @@
-const Player = (mark, name = "Player", isIA = false, score = 0) => {
+/*
+Factory function of Player
+*/
+const Player = (
+  mark,
+  name = "Player",
+  isIA = false,
+  score = 0,
+  movesTable = []
+) => {
   //Name
   const getName = () => name;
 
@@ -10,7 +19,21 @@ const Player = (mark, name = "Player", isIA = false, score = 0) => {
   const incrementScore = () => score++;
   const resetScore = () => (score = 0);
 
-  return { getName, getMark, getScore, incrementScore, resetScore };
+  //Moves table
+  const getMoves = () => movesTable;
+  const setMove = (cell) => movesTable.push(cell);
+  const resetMoves = () => (movesTable = []);
+
+  return {
+    getName,
+    getMark,
+    getScore,
+    incrementScore,
+    resetScore,
+    getMoves,
+    setMove,
+    resetMoves,
+  };
 };
 
 export { Player };

@@ -17,6 +17,8 @@ body {
 
 .board {
   display: grid;
+  max-width: 225px;
+  max-height: 225px;
   grid-template-columns: repeat(3, 75px);
   grid-template-rows: repeat(3, 75px);
   background-color: black;
@@ -28,5 +30,5 @@ body {
   align-items: center;
   justify-content: center;
   background-color: white;
-  text-align: center;
+  font-size: 4.5rem;
 }/*# sourceMappingURL=style.css.map */
